@@ -1,90 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>SCHOOL CHAT BOT</title>
 </head>
+
 <body>
     <header>
         <h2 class="logo">SCHOOL CHAT BOT</h2>
         <nav class="navbar">
-            <a href="#">HOME</a>
-            <a href="#">SCHEDULE</a>
-            <a href="#">GRADES</a>
-            <a href="#">ABSENCE</a>
             <button class="btnLogin-popup">Login</button>
         </nav>
     </header>
-    <main>
-        <div class="wrapper">
-            <span class="icon-close">
-                <ion-icon name="close"></ion-icon>
-            </span>
-            <div class="form-box login">
-                <h2>Login</h2>
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="mail"></ion-icon>
-                        </span>
-                        <input type="text" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="lock-closed"></ion-icon>
-                        </span>
-                        <input type="password" required>
-                        <label>Password</label>
-                    </div>
-                    <div class="remember-forgot">
-                        <label><input type="checkbox">Remember me</label>
-                        <a href="#">Forgot Password?</a>
-                    </div>
-                    <button class="btn" type="submit">Login</button>
-                    <div class="login-register">
-                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                    </div>
-                </form>
-            </div>
 
-            <div class="form-box register">
-                <h2>Registration</h2>
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="person"></ion-icon>
-                        </span>
-                        <input type="text" required>
-                        <label>Username</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="mail"></ion-icon>
-                        </span>
-                        <input type="text" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="lock-closed"></ion-icon>
-                        </span>
-                        <input type="password" required>
-                        <label>Password</label>
-                    </div>
-                    <div class="remember-forgot">
-                        <label><input type="checkbox">I agree to the terms & conditions</label>
-                    </div>
-                    <button class="btn" type="submit">Register</button>
-                    <div class="login-register">
-                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-                    </div>
-                </form>
-            </div>
+    <main>
+        <div class="about">
+            <!-- <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, vero animi nemo laborum facere aut nihil similique dolor iste incidunt assumenda provident aperiam voluptatibus laudantium necessitatibus deleniti ea nostrum magnam?
+                Ea illum nisi possimus voluptatum rem illo perferendis optio sed dolorem qui adipisci enim placeat, quas excepturi magni veritatis consequatur pariatur voluptas voluptates deleniti nemo, distinctio incidunt unde eligendi. Laboriosam?
+                Dolores, mollitia veniam reiciendis ea animi repudiandae itaque recusandae excepturi sint voluptas, incidunt expedita facilis corporis nihil esse culpa quo totam dicta soluta corrupti? Incidunt dicta doloremque reprehenderit sequi doloribus.
+                Vero, reiciendis. Magni et consequatur, eligendi non praesentium saepe, delectus voluptatem perspiciatis accusamus quam ad ex aspernatur at tempore nam amet expedita, dolorem error sint? Fuga nobis voluptatem officiis obcaecati.
+                Cumque quasi corporis accusantium ducimus magni obcaecati odio provident debitis, temporibus sapiente enim ipsum quod soluta natus dolorum quo, nostrum animi minus perferendis corrupti suscipit est, in sequi recusandae! Dolore!
+                Quas, at deserunt. Aliquid, laborum voluptas? At cum quam optio fugiat architecto delectus incidunt nesciunt iusto obcaecati temporibus omnis ullam quidem quod alias et, ipsam blanditiis, nisi modi quaerat. Ullam.
+                Quidem temporibus magnam, nisi consequuntur dolore accusantium molestiae magni obcaecati? Et optio in, ullam recusandae repudiandae cupiditate deleniti. Porro dignissimos minus distinctio culpa totam veritatis quaerat cupiditate at voluptates similique!
+                Quod quibusdam accusamus officia earum laudantium quasi voluptatibus et officiis blanditiis nobis praesentium consectetur consequuntur, illum tempora, nesciunt fugiat sit eos ipsa veritatis, cumque facere dolorum repellat. Placeat, veritatis inventore!
+                Qui architecto quaerat tenetur aliquid libero maiores animi, ipsam sequi aperiam natus? Ex culpa odit nostrum sit, iusto quos sapiente sunt officia, dolore veritatis consequatur soluta, ducimus similique suscipit laborum.
+                Aperiam atque iste tempora adipisci quos nisi earum, totam alias cum corporis ratione quia at hic voluptatum ut obcaecati possimus dolorum facere rem? Dicta perspiciatis asperiores laudantium explicabo iste quasi!
+            </p>  -->
         </div>
     </main>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input id="input" type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button class="btn" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
 
     </footer>
@@ -93,4 +71,5 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

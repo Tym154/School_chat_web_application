@@ -15,11 +15,14 @@ body {
     height: 100vh;
 }
 
+/* Header */
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 98%;
+    height: 90px;
     padding: 20px 100px;
     margin: 20px;
     background-color: #086972;
@@ -66,6 +69,31 @@ header {
 
 }
 
+/* Main */
+
+.about {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 98%;
+    height: 70vh;
+    padding: 20px 100px;
+    margin: 20px;
+    display: inline-block;
+    justify-content: center;
+    background-color: #086972;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    transition: transform .5s ease;
+    transform: scale(1);
+}
+
+.about.active-about {
+    transform: scale(0);
+}
+
+/* Wrapper */
+
 .wrapper {
     position: relative;
     width: 400px;
@@ -99,17 +127,6 @@ header {
     transform: translateX(0);
 }
 
-.wrapper.active .form-box.login {
-    transition: none;
-    transform: translateX(-400px);
-}
-
-.wrapper .form-box.register {
-    position: absolute;
-    transition: none;
-    transform: translateX(400px);
-}
-
 .wrapper.active .form-box.register {
     transition: transform .18s ease;
     transform: translateX(0);
@@ -133,7 +150,7 @@ header {
 }
 
 .form-box h2 {
-    font-size: 30px;
+    font-size: 40px;
     color: #162938;
     text-align: center;
 }
